@@ -1,0 +1,60 @@
+.question {
+    padding: 20px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    cursor: pointer;
+    &:last-child {
+        border-bottom: none;
+    }
+    &-wrapper {
+        margin-top: 70px;
+        padding-inline: 16px;
+    }
+    &__sub-heading {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    &__heading {
+        padding-top: 8px;
+        background-image: url(https://vietnix.vn/wp-content/uploads/2021/09/mesh-img.png);
+    }
+    &-box {
+        margin-top: 50px;
+        background-color: #fff;
+        box-shadow: 1px 1px 10px #efefef;
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    &-text {
+        flex: 1;
+        padding-left: 10px;
+    }
+    &-more {
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+    &-save {
+        font-size: 2rem;
+        border-radius: 50%;
+        background-color: #ebebeb;
+        padding: 5px;
+    }
+    &__bottom {
+        padding-block: 12px;
+        font-size: 1.7rem;
+        display: none;
+        height: 0;
+    }
+    &-active &__bottom {
+        display: block;
+        height: 100%;
+    }
+    &-active &__top {
+        color: $color-primary;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 12px;
+    }
+}

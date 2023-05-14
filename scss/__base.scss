@@ -1,0 +1,39 @@
+#container {
+    background-color: $color-container;
+}
+
+.btn__line {
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    padding: 8px 16px;
+    font-size: 1.6rem;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn__bg {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid $color-primary;
+    background-color: $color-primary;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 1.6rem;
+    border-radius: 4px;
+}
+
+.heading {
+    font-size: 2.8rem;
+    color: $color-primary;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: $max-w;
+    margin: 0 auto;
+}
+
+.outstanding {
+    color: #ff0099;
+}

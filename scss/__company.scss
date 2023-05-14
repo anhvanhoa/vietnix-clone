@@ -1,0 +1,54 @@
+.company {
+    background-color: #133760;
+    margin-top: 70px;
+    padding-inline: 16px;
+    &__inner {
+        padding-block: 40px;
+    }
+    &__sub-title {
+        color: #f8a447;
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+    &__heading {
+        color: #fff;
+    }
+    &-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    &-icon {
+        width: 45px;
+        height: 45px;
+    }
+    &-name {
+        font-size: 2rem;
+        color: $color-primary;
+    }
+    &-sub-name {
+        font-size: 1.4rem;
+        padding-block: 10px;
+    }
+    &-description {
+        font-size: 1.4rem;
+    }
+    &-info {
+        flex: 1;
+        color: #fff;
+    }
+}
+
+.box-company {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .box-company {
+        grid-template-columns: 1fr;
+    }
+}

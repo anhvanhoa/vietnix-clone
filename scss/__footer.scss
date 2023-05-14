@@ -1,0 +1,115 @@
+.footer {
+    margin-top: 70px;
+    background-color: #133760;
+    color: #fff;
+    padding-inline: 16px;
+    &-help {
+        padding-block: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-service {
+        display: flex;
+        gap: 30px;
+        border-top: 1px solid #ccc;
+        padding-top: 30px;
+    }
+    &__list {
+        list-style: none;
+    }
+    &-info {
+        display: flex;
+        gap: 40px;
+        margin-top: 40px;
+        border-top: 1px solid #ccc;
+        padding-block: 30px;
+    }
+    &-copywriter {
+        border-top: 0.2px solid #ccc;
+        text-align: center;
+        padding-block: 20px;
+        font-size: 1.6rem;
+    }
+}
+
+.help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3);
+    gap: 10px;
+    + .help {
+        border-left: 1px solid #ccc;
+    }
+    &-icon {
+        cursor: pointer;
+    }
+    &-info {
+        &-heading {
+            font-size: 1.7rem;
+        }
+        &-description {
+            padding-block: 4px;
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+    }
+}
+
+.service {
+    &__list {
+        list-style: none;
+        font-size: 1.5rem;
+    }
+    &__heading {
+        font-size: 1.7rem;
+    }
+    &-item {
+        padding-block: 8px;
+        cursor: pointer;
+    }
+}
+
+.info {
+    &__heading {
+        font-size: 1.7rem;
+    }
+    &-item {
+        padding-block: 8px;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        cursor: pointer;
+    }
+    &__list {
+        list-style: none;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .footer {
+        &-help {
+            gap: 10px;
+        }
+        &-service {
+            flex-wrap: wrap;
+        }
+        &-info {
+            flex-wrap: wrap;
+        }
+    }
+    .help {
+        + .help {
+            border-left: none;
+        }
+        &-info {
+            &-heading {
+                font-size: 1.3rem;
+            }
+            &-description {
+                display: none;
+            }
+        }
+    }
+}

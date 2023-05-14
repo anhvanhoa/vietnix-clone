@@ -1,0 +1,40 @@
+.banner {
+    background-image: url(https://vietnix.vn/wp-content/uploads/2023/01/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+    margin-top: 104px;
+    display: flex;
+    align-items: center;
+    &__inner {
+        height: 300px;
+    }
+    &-image-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        height: 600px;
+        &__inner {
+            height: 100%;
+        }
+        &-image-desktop {
+            display: none;
+        }
+        &-image-mobile {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        margin-top: 95px;
+        height: 600px;
+        &__inner {
+            height: 100%;
+        }
+    }
+}
